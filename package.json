@@ -1,0 +1,45 @@
+{
+  "name": "@andrewthehan/conditional-components",
+  "version": "0.0.1",
+  "description": "Conditional Components",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx babel index.tsx --out-file build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewthehan/conditional-components.git"
+  },
+  "author": "Andrew Han",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewthehan/conditional-components/issues"
+  },
+  "homepage": "https://github.com/andrewthehan/conditional-components#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "core-js": "^3.21.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ],
+      "@babel/react",
+      "@babel/preset-typescript"
+    ]
+  }
+}
