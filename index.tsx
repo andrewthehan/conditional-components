@@ -13,7 +13,7 @@ export function Predicate({
 }
 
 type NullableProps<T> = {
-  value: T | null;
+  value: T | null | undefined;
   children: (t: T) => JSX.Element;
   or?: () => JSX.Element;
 };
@@ -23,5 +23,5 @@ export function Nullable<T>({
   children,
   or = () => <></>,
 }: NullableProps<T>): JSX.Element {
-  return value != null ? children(value) : or();
+  return value !== null && value !== undefined ? children(value) : or();
 }
