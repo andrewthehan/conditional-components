@@ -1,10 +1,10 @@
 {
   "name": "@andrewthehan/conditional-components",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "description": "Conditional Components",
   "main": "build/index.js",
   "scripts": {
-    "build": "npx babel index.tsx --out-file build/index.js",
+    "build": "babel index.tsx --out-file build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "babel-cli": "^6.26.0",
     "core-js": "^3.21.1"
   },
   "peerDependencies": {
